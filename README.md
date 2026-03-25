@@ -1,7 +1,6 @@
 # metabolas
 
-Supongamos que tenemos un plano de coordenadas.
-La idea es dar un color a cada punto (x,y) en funcion del mismo par (x,y).
+Supongamos que tenemos un plano de coordenadas y le damos un color a cada punto (x,y) en funcion del mismo par (x,y).
 Osea, hay una funcion f tal que f(x,y) es un color.
 
 Si definimos $f(x,y) = (x,y,0)$, donde la terna que devuelve la funcion es un color en RGB, y corremos para cada punto del plano la funcion, obtenemos lo siguiente:
