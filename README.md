@@ -34,7 +34,7 @@ De acá viene la idea de "meta-balls"; Colorear cada punto (x,y) del plano con r
 
 Imaginemos entonces que tenemos varios circulos centrados en (a1,b1), (a2,b2),...,(an,bn) de radios r1,r2,...,rn respectivamente. La formula magica que buscamos es: $f(x,y) = \sum(ri/dist_i)$. Mientras mas cerca esten 2 circulos de un punto, menor la distancia a ese punto y mayor el valor de la funcion.
 
-En escala queda así:
+En escala de grises queda así:
 
 ![Alt text](./data/1.gif)
 
