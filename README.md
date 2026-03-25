@@ -45,7 +45,7 @@ Incluso podriamos volver a RGB y definir $f(x,y) = (sum, 255, 255)$, con $sum=\s
 Me encanta como genera ese efecto de sustancia aceitosa/pegajosa; La formula que usamos es una de muchas. A futuro voy a actualizar este repo probando otras. 
 
 ---
-Basado en este [video de Daniel Shiffman]([https://link-url-here.org](https://www.youtube.com/watch?v=ccYLb7cLB1I))
+Basado en este [video de Daniel Shiffman](https://www.youtube.com/watch?v=ccYLb7cLB1I)
 
 
 
