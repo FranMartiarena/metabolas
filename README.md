@@ -25,7 +25,10 @@ Si ahora en lugar de usar RGB usamos escala de grises, a medida que nos alejamos
 
 ![Alt text](./data/2.png)
 
-Podemos explayarnos, y en lugar de tener un punto fijo en el centro tener un circulo de radio r que se mueve; Podemos hacer $f(x,y) = r/dist((x,y),(a,b))$ a medida que se mueve y invertir los colores con respecto a como lo haciamos antes; Ahora el centro es blanco y a medida que nos alejamos es mas oscuro. (En js la division por 0 dá infinito y no error).
+Tambien podemos hacer $f(x,y) = 1/dist((x,y),(a,b))$, lo que invierte los colores. Ahora si nos alejamos todo se haría mas oscuro (En js la division por 0 dá infinito y no error).
+
+Si en lugar de tener un punto fijo en el centro tuviesemos un circulo de radio r, multiplicamos por el radio: $f(x,y) = r/dist((x,y),(a,b))$.
+De esta forma se "remarca" la circunferencia del circulo.
 
 Pero y si hubiesen varios circulos? Como deberia colorearse cada punto (x,y) del plano?
 
@@ -33,7 +36,7 @@ De acá viene la idea de "meta-balls"; Colorear cada punto (x,y) del plano con r
 
 Imaginemos entonces que tenemos varios circulos centrados en (a1,b1), (a2,b2),...,(an,bn) de radios r1,r2,...,rn respectivamente. La formula magica que buscamos es: $f(x,y) = \sum(ri/dist_i)$. Mientras mas cerca esten 2 circulos de un punto, menor la distancia a ese punto y mayor el valor de la funcion.
 
-En escala de grises queda así:
+Usando alguna libreria grafica podemos hacer que los circulos se muevan, y en escala de grises queda así:
 
 ![Alt text](./data/1.gif)
 
