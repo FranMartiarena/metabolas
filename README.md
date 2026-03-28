@@ -27,10 +27,10 @@ Si ahora en lugar de usar RGB usamos escala de grises, a medida que nos alejamos
 
 Tambien podemos hacer $f(x,y) = 1/dist((x,y),(a,b))$, lo que invierte los colores. Ahora si nos alejamos todo se haría mas oscuro (En js la division por 0 dá infinito y no error).
 
-Si en lugar de tener un punto fijo en el centro tuviesemos un circulo de radio r, multiplicamos por el radio: $f(x,y) = r/dist((x,y),(a,b))$.
+Si en lugar de ser un punto, fuese un circulo de radio r, multiplicamos por el radio: $f(x,y) = r/dist((x,y),(a,b))$.
 De esta forma se "remarca" la circunferencia del circulo.
 
-Pero y si hubiesen varios circulos? Como deberia colorearse cada punto (x,y) del plano?
+Pero y si hubiesen varios circulos? Como deberia colorearse cada punto (x,y) del plano teniendo en cuanta cada uno de ellos?
 
 De acá viene la idea de "meta-balls"; Colorear cada punto (x,y) del plano con respecto a la distancia entre dicho punto y cada circulo.
 
